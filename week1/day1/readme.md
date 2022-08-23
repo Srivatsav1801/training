@@ -1,6 +1,6 @@
 #Day 1
 
-I have studied Python topics from the given material and covered the following topics :
+I have studied Python topics from the given material (https://cs50.harvard.edu/python/2022/) and covered the following topics :
 
 ##Topics
 1.Functions
