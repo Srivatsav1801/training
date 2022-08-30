@@ -56,7 +56,8 @@ class Train:
         except FileNotFoundError:
             self.avl1=180
             self.avl2=180          
-        print(f"The following Classes are available:\n1.AC CHAIRCAR:-\tcost = Rs.800\tavailable seats = {self.avl1}\n2.SECOND CLASS\tcost = Rs.400\tavailable seats = {self.avl2}\n3.UNRESERVERD\tcost = Rs.200\n")
+        print(f"The following Classes are available:")
+        print(f"\n1.AC CHAIRCAR:-\tcost = Rs.800\tavailable seats = {self.avl1}\n2.SECOND CLASS\tcost = Rs.400\tavailable seats = {self.avl2}\n3.UNRESERVERD\tcost = Rs.200\n")
         chance = 1
         self.cost = 0
         while(chance ==1):
@@ -93,7 +94,7 @@ class Train:
                     self.stats ="waiting list" 
                     print("waiting list")
             elif self.cl == 3:
-                self.cost = self.cost + (200*n)
+                self.cost = self.cost + (200*self.ti)
                 self.resno = random.randint(10000,99999)
                 self.cl = "UNRESERVERED"
                 print(f"Name:{self.name}\nAge:{self.age}\nUNRESERVERD\nTotal Cost of ticket(s) = {self.cost}\nReservation No:{self.resno}\nNo of tickets:{self.ti}")                            
