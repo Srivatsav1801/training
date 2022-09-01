@@ -1,7 +1,3 @@
-
-from ast import main
-
-
 def main():
     msg = input("Enter the Message:")
     nmsg = cap_to_low(msg)
