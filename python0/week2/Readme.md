@@ -1,5 +1,5 @@
 
-# Week 1:
+# Week 2:
 it is a set of programs to showcase Loops in Python
 
 # camelCase 
