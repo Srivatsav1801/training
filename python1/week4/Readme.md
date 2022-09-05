@@ -23,15 +23,15 @@ Note that the emoji module comes with two functions, per pypi.org/project/emoji,
 Here’s how to test the code manually:
 
 
-Run the program with python emojize.py. Type :1st_place_medal: and press Enter. the program should output:
+Run the program with python Emojize.py. Type :1st_place_medal: and press Enter. the program should output:
 
     Output: 🥇
 
-Run the program with python emojize.py. Type :money_bag: and press Enter. the program should output:
+Run the program with python Emojize.py. Type :money_bag: and press Enter. the program should output:
 
     Output: 💰
 
-Run the program with python emojize.py. Type :smile_cat: and press Enter. the program should output:
+Run the program with python Emojize.py. Type :smile_cat: and press Enter. the program should output:
 
     Output: 😸
 
@@ -67,19 +67,19 @@ You can install pyfiglet with:
 Here’s how to test the code manually:
 
 
-Run the program with python figlet.py test. the program should exit via sys.exit and print an error message:
+Run the program with python Figlet.py test. the program should exit via sys.exit and print an error message:
 
 Invalid usage
 
-Run the program with python figlet.py -a slant. the program should exit via sys.exit and print an error message:
+Run the program with python Figlet.py -a slant. the program should exit via sys.exit and print an error message:
 
 Invalid usage
 
-Run the program with python figlet.py -f invalid_font. the program should exit via sys.exit and print an error message:
+Run the program with python Figlet.py -f invalid_font. the program should exit via sys.exit and print an error message:
 
 Invalid usage
 
-Run the program with python figlet.py -f slant. Type CS50. the program should print the following:
+Run the program with python Figlet.py -f slant. Type CS50. the program should print the following:
 
        ___________ __________ 
       / ____/ ___// ____/ __ \
@@ -87,7 +87,7 @@ Run the program with python figlet.py -f slant. Type CS50. the program should pr
     / /___ ___/ /___/ / /_/ / 
     \____//____/_____/\____/  
 
-Run the program with python figlet.py -f rectangles. Type Hello, world. the program should print the following:
+Run the program with python Figlet.py -f rectangles. Type Hello, world. the program should print the following:
 
      _____     _ _                        _   _ 
     |  |  |___| | |___      _ _ _ ___ ___| |_| |
@@ -95,7 +95,7 @@ Run the program with python figlet.py -f rectangles. Type Hello, world. the prog
     |__|__|___|_|_|___| |  |_____|___|_| |_|___|
                       |_|                       
 
-Run the program with python figlet.py -f alphabet. Type Moo. the program should print the following:
+Run the program with python Figlet.py -f alphabet. Type Moo. the program should print the following:
 
     M   M         
     MM MM         
@@ -133,22 +133,22 @@ names with commas and one and, as in the below:
 ## How to Test :
 Here’s how to test the code manually:
 
-Run the program with python adieu.py. Type Liesl and press Enter, followed by control-d. the program should output:
+Run the program with python Adieu.py. Type Liesl and press Enter, followed by control-d. the program should output:
 
     Adieu, adieu, to Liesl 
 
-Run the program with python adieu.py. Type Liesl and press Enter, then type Friedrich and press Enter, followed by control-d. the program should output:
+Run the program with python Adieu.py. Type Liesl and press Enter, then type Friedrich and press Enter, followed by control-d. the program should output:
 
     Adieu, adieu, to Liesl and Friedrich
 
-Run the program with python adieu.py. Type Liesl and press Enter, then type Friedrich and press Enter. Now type Louisa and press Enter, followed by control-d. the program should output:
+Run the program with python Adieu.py. Type Liesl and press Enter, then type Friedrich and press Enter. Now type Louisa and press Enter, followed by control-d. the program should output:
 
     Adieu, adieu, to Liesl, Friedrich, and Louisa
 
 
 
 # Guessing Game
-game.py, is a program that:
+Game.py, is a program that:
 
 - Prompts the user for a level, 
 - If the user does not input a positive integer, the program should prompt again.
@@ -164,37 +164,37 @@ game.py, is a program that:
 Here’s how to test code manually:
 
 
-Run the program with python game.py. Type cat at a prompt that says Level: and press Enter. the program should reprompt you:
+Run the program with python Game.py. Type cat at a prompt that says Level: and press Enter. the program should reprompt you:
 
     Level:   
 
-Run the program with python game.py. Type -1 at a prompt that says Level: and press Enter. the program should reprompt you:
+Run the program with python Game.py. Type -1 at a prompt that says Level: and press Enter. the program should reprompt you:
 
     Level:   
 
-Run the program with python game.py. Type 10 at a prompt that says Level: and press Enter. the program should now be ready to accept guesses:
+Run the program with python Game.py. Type 10 at a prompt that says Level: and press Enter. the program should now be ready to accept guesses:
 
     Guess:   
 
-Run the program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type cat. the program should reprompt you:
+Run the program with python Game.py. Type 10 at a prompt that says Level: and press Enter. Then type cat. the program should reprompt you:
 
     Guess:   
 
-Run the program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type -1. the program should reprompt you:
+Run the program with python Game.py. Type 10 at a prompt that says Level: and press Enter. Then type -1. the program should reprompt you:
 
     Guess:   
 
-Run the program with python game.py. Type 1 at a prompt that says Level: and press Enter. Then type 1. the program should output:
+Run the program with python Game.py. Type 1 at a prompt that says Level: and press Enter. Then type 1. the program should output:
 
     Just right!  
 
 There’s only one possible number the answer could be!
-Run the program with python game.py. Type 10 at a prompt that says Level: and press Enter. Then type 100. the program should output:
+Run the program with python Game.py. Type 10 at a prompt that says Level: and press Enter. Then type 100. the program should output:
 
     Too large!  
 
 Looks like you’re guessing outside the range you specified.
-Run the program with python game.py. Type 10000 at a prompt that says Level: and press Enter. Then type 1. the program should output:
+Run the program with python Game.py. Type 10000 at a prompt that says Level: and press Enter. Then type 1. the program should output:
 
     Too small!  
 
@@ -210,38 +210,38 @@ Professor.py, implement a program that:
 ## How to Test :
 Here’s how to test the code manually:
 
-Run your program with python professor.py. Type -1 and press Enter. Your program should reprompt you:
+Run your program with python Professor.py. Type -1 and press Enter. Your program should reprompt you:
 
     Level:   
 
-Run your program with python professor.py. Type 4 and press Enter. Your program should reprompt you:
+Run your program with python Professor.py. Type 4 and press Enter. Your program should reprompt you:
 
     Level:   
 
-Run your program with python professor.py. Type 1 and press Enter. Your program should begin posing addition problems with positive, single-digit integers. For example:
+Run your program with python Professor.py. Type 1 and press Enter. Your program should begin posing addition problems with positive, single-digit integers. For example:
 
     6 + 6 =    
 
 Your program should output 10 distinct problems before printing the number of questions you answered correctly and exiting.
-Run your program with python professor.py. Type 1 and press Enter. Answer the first question incorrectly. Your program should output:
+Run your program with python Professor.py. Type 1 and press Enter. Answer the first question incorrectly. Your program should output:
 
     EEE
 
 before reprompting you with the same question.
-Run your program with python professor.py. Type 1 and press Enter. Answer the first question incorrectly, three times. Your program should output the correct answer. For example:
+Run your program with python Professor.py. Type 1 and press Enter. Answer the first question incorrectly, three times. Your program should output the correct answer. For example:
 
     6 + 6 = 12
 
 and then move on to another question. Answer the remaining questions correctly. Your program should output a score of 9.
 
-Run your program with python professor.py. Type 1 and press Enter. Answer all 10 questions correctly. Your program should output a score of 10.
+Run your program with python Professor.py. Type 1 and press Enter. Answer all 10 questions correctly. Your program should output a score of 10.
 
 # Bitcoin Price Index
 Bitcoin is a form of digitial currency, otherwise known as cryptocurrency. Rather than rely on a central authority like a bank, Bitcoin instead relies on a distributed network, otherwise known as a blockchain, to record transactions.
 
 Because there’s demand for Bitcoin (i.e., users want it), users are willing to buy it, as by exchanging one currency (e.g., USD) for Bitcoin.
 
-In a file called bitcoin.py, implement a program that:
+In a file called Bitcoin.py, implement a program that:
 - Expects the user to specify as a command-line argument the number of Bitcoins,n , that they would like to buy. If that argument cannot be converted to a float, the program should exit via sys.exit with an error message.
 - Queries the API for the CoinDesk Bitcoin Price Index at https://api.coindesk.com/v1/bpi/currentprice.json, which returns a JSON object, among whose nested keys is the current price of Bitcoin as a float. Be sure to catch any exceptions, as with code like:
 
@@ -262,16 +262,16 @@ Note that the requests module comes with quite a few methods, per requests.readt
 ## How to Test :
 Here’s how to test the code manually:
 
-Run your program with python bitcoin.py. Your program should use sys.exit to exit with an error message:
+Run your program with python Bitcoin.py. Your program should use sys.exit to exit with an error message:
 
     Missing command-line argument   
 
-Run your program with python bitcoin.py cat. Your program should use sys.exit to exit with an error message:
+Run your program with python Bitcoin.py cat. Your program should use sys.exit to exit with an error message:
 
     Command-line argument is not a number
 
-Run your program with python bitcoin.py 1. Your program should output the price of a single Bitcoin to four decimal places, using , as a thousands separator.
+Run your program with python Bitcoin.py 1. Your program should output the price of a single Bitcoin to four decimal places, using , as a thousands separator.
 
-Run your program with python bitcoin.py 2. Your program should output the price of two Bitcoin to four decimal places, using , as a thousands separator.
+Run your program with python Bitcoin.py 2. Your program should output the price of two Bitcoin to four decimal places, using , as a thousands separator.
 
-Run your program with python bitcoin.py 2.5. Your program should output the price of 2.5 Bitcoin to four decimal places, using , as a thousands separator.
+Run your program with python Bitcoin.py 2.5. Your program should output the price of 2.5 Bitcoin to four decimal places, using , as a thousands separator.
