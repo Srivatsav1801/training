@@ -49,15 +49,15 @@ Then, in that same file, is a function called main that prompts the user for inp
 ## How to Test :
 Here’s how to test code manually:
 
-Run program with python faces.py. Type Hello :) and press Enter. program should output:
+Run program with python Faces.py. Type Hello :) and press Enter. program should output:
 
     Hello 🙂
 
-Run program with python faces.py. Type Goodbye :( and press Enter. program should output:
+Run program with python Faces.py. Type Goodbye :( and press Enter. program should output:
 
     Goodbye 🙁
 
-Run program with python faces.py. Type Hello :) Goodbye :( and press Enter. program should output
+Run program with python Faces.py. Type Hello :) Goodbye :( and press Enter. program should output
 
     Hello 🙂 Goodbye 🙁
 
@@ -70,15 +70,15 @@ In a file called Einstein.py, is a program in Python that prompts the user for m
 ## How to Test :
 Here’s how to test your code manually:
 
-Run program with python einstein.py. Type 1 and press Enter program should output:
+Run program with python Einstein.py. Type 1 and press Enter program should output:
 
     90000000000000000
 
-Run program with python einstein.py. Type 14 and press Enter program should output:
+Run program with python Einstein.py. Type 14 and press Enter program should output:
 
     1260000000000000000
 
-Run program with python einstein.py. Type 50 and press Enter program should output
+Run program with python Einstein.py. Type 50 and press Enter program should output
 
     4500000000000000000
 
@@ -113,15 +113,15 @@ Assume that the user will input values in the expected formats.
 ## How to Test :
 Here’s how to test code manually:
 
-Run program with python tip.py. Type $50.00 and press Enter. Then, type 15% and press Enter. program should output:
+Run program with python Tip.py. Type $50.00 and press Enter. Then, type 15% and press Enter. program should output:
 
     Leave $7.50    
 
-Run program with python tip.py. Type $100.00 and press Enter. Then, type 18% and press Enter. program should output:
+Run program with python Tip.py. Type $100.00 and press Enter. Then, type 18% and press Enter. program should output:
 
     Leave $18.00
 
-Run program with python tip.py. Type $15.00 and press Enter. Then, type 25% and press Enter. program should output
+Run program with python Tip.py. Type $15.00 and press Enter. Then, type 25% and press Enter. program should output
 
     Leave $3.75
 
