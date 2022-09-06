@@ -1,5 +1,5 @@
 # Week 6:
-it is a set of programs to showcase Unit test in Python
+It is a set of programs to showcase Unit test in Python
 
 # Lines of Code
 One way to measure the complexity of a program is to count its number of lines of code (LOC), excluding blank lines and comments. For instance, a program like
@@ -24,7 +24,7 @@ isn’t really twice as complex as a function like
 
 even though the former has (more than) twice as many lines of code. In fact, the former might arguably be simpler if it’s easier to read! So lines of code should be taken with a grain of salt.
 
-Even so, in a file called Lines.py, implement a program that expects exactly one command-line argument, the name (or path) of a Python file, and outputs the number of lines of code in that file, excluding comments and blank lines. If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .py, or if the specified file does not exist, the program should instead exit via sys.exit.
+Even so, in a file called lines.py, implement a program that expects exactly one command-line argument, the name (or path) of a Python file, and outputs the number of lines of code in that file, excluding comments and blank lines. If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .py, or if the specified file does not exist, the program should instead exit via sys.exit.
 
 Assume that any line that starts with #, optionally preceded by whitespace, is a comment. (A docstring should not be considered a comment.) Assume that any line that only contains whitespace is blank.
 
@@ -32,19 +32,19 @@ Assume that any line that starts with #, optionally preceded by whitespace, is a
 
 Here’s how to test the code manually:
 
-Run the program with python Lines.py. the program should exit with sys.exit and provide an error message:
+Run the program with python lines.py. the program should exit with sys.exit and provide an error message:
 
     Too few command-line arguments
 
-Create two python programs, Hello.py and Goodbye.py. Run python Lines.py hello.py goodbye.py. the program should exit with sys.exit and provide an error message:
+Create two python programs, hello.py and goodbye.py. Run python lines.py hello.py goodbye.py. the program should exit with sys.exit and provide an error message:
 
     Too many command-line arguments
 
-Create a text file called invalid_extension.txt. Run the program with python Lines.py invalid_extension.txt. the program should exit with sys.exit and provide an error message:
+Create a text file called invalid_extension.txt. Run the program with python lines.py invalid_extension.txt. the program should exit with sys.exit and provide an error message:
 
     Not a Python file
 
-Run the program with python Lines.py non_existent_file.py. Assuming non_existent_file.py doesn’t exist, the program should exit with sys.exit and provide an error message:
+Run the program with python lines.py non_existent_file.py. Assuming non_existent_file.py doesn’t exist, the program should exit with sys.exit and provide an error message:
 
     File does not exist
 
@@ -79,29 +79,29 @@ Of course, a CSV file isn’t the most customer-friendly format to look at. Pret
     | Special          | $33.50  | $47.95  |
     +------------------+---------+---------+
 
-In a file called Pizza.py, implement a program that expects exactly one command-line argument, the name (or path) of a CSV file in Pinocchio’s format, and outputs a table formatted as ASCII art using tabulate, a package on PyPI at pypi.org/project/tabulate. Format the table using the library’s grid format. If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .csv, or if the specified file does not exist, the program should instead exit via sys.exit.
+In a file called pizza.py, implement a program that expects exactly one command-line argument, the name (or path) of a CSV file in Pinocchio’s format, and outputs a table formatted as ASCII art using tabulate, a package on PyPI at pypi.org/project/tabulate. Format the table using the library’s grid format. If the user does not specify exactly one command-line argument, or if the specified file’s name does not end in .csv, or if the specified file does not exist, the program should instead exit via sys.exit.
 
 
 ## How to Test :
 Here’s how to test the code manually:
 
-Run the program with python Pizza.py. the program should exit using sys.exit and provide an error message:
+Run the program with python pizza.py. the program should exit using sys.exit and provide an error message:
 
     Too few command-line arguments
 
-Be sure to download regular.csv and sicilian.csv, placing them in the same folder as Pizza.py. Run the program with python Pizza.py regular.csv sicilian.csv. the program should output:
+Be sure to download regular.csv and sicilian.csv, placing them in the same folder as pizza.py. Run the program with python pizza.py regular.csv sicilian.csv. the program should output:
 
     Too many command-line arguments
 
-Run the program with python Pizza.py invalid_file.csv. Assuming invalid_file.csv doesn’t exist, the program should exit using sys.exit and provide an error message:
+Run the program with python pizza.py invalid_file.csv. Assuming invalid_file.csv doesn’t exist, the program should exit using sys.exit and provide an error message:
 
     File does not exist
 
-Create a file named sicilian.txt. Run the program with python Pizza.py sicilian.txt. the program should exit using sys.exit and provide an error message:
+Create a file named sicilian.txt. Run the program with python pizza.py sicilian.txt. the program should exit using sys.exit and provide an error message:
 
     Not a CSV file
 
-Run the program with python Pizza.py regular.csv. Assuming you’ve downloaded regular.csv, the program should print a table like the below:
+Run the program with python pizza.py regular.csv. Assuming you’ve downloaded regular.csv, the program should print a table like the below:
 
     +-----------------+---------+---------+
     | Regular Pizza   | Small   | Large   |
@@ -193,7 +193,7 @@ Rather than with, for instance:
 
     Dear Harry,
 
-In a file called Scourgify.py, implement a program that:
+In a file called scourgify.py, implement a program that:
 
 - Expects the user to provide two command-line arguments:
     - the name of an existing CSV file to read as input, whose columns are assumed to be, in order, name and house, and
@@ -204,19 +204,19 @@ If the user does not provide exactly two command-line arguments, or if the first
 ## How to Test :
 Here’s how to test the code manually:
 
-Run the program with python Scourgify.py. the program should exit using sys.exit and provide an error message:
+Run the program with python scourgify.py. the program should exit using sys.exit and provide an error message:
 
     Too few command-line arguments
 
-Create empty files 1.csv, 2.csv, and 3.csv. Run the program with python Scourgify.py 1.csv 2.csv 3.csv. the program should output:
+Create empty files 1.csv, 2.csv, and 3.csv. Run the program with python scourgify.py 1.csv 2.csv 3.csv. the program should output:
 
     Too many command-line arguments
 
-Run the program with python Scourgify.py invalid_file.csv output.csv. Assuming invalid_file.csv doesn’t exist, the program should exit using sys.exit and provide an error message:
+Run the program with python scourgify.py invalid_file.csv output.csv. Assuming invalid_file.csv doesn’t exist, the program should exit using sys.exit and provide an error message:
 
     Could not read invalid_file.csv
 
-Run the program with python Scourgify.py before.csv after.csv. Assuming before.csv exists, the program should create a new file, after.csv, whose columns should be, in order, first, last, and house.
+Run the program with python scourgify.py before.csv after.csv. Assuming before.csv exists, the program should create a new file, after.csv, whose columns should be, in order, first, last, and house.
 
 
 # CS50 P-Shirt
@@ -240,24 +240,24 @@ Assume that the input will be a photo of someone posing in just the right way, l
 ## How to Test :
 Here’s how to test the code manually:
 
-Run your program with python Shirt.py. Your program should exit using sys.exit and provide an error message:
+Run your program with python shirt.py. Your program should exit using sys.exit and provide an error message:
 
     Too few command-line arguments   
 
-Be sure to download images.and run your program with python Shirt.py before1.jpg before2.jpg before3.jpg. Your program should output:
+Be sure to download images.and run your program with python shirt.py before1.jpg before2.jpg before3.jpg. Your program should output:
 
     Too many command-line arguments
 
-Run your program with python Shirt.py before1.jpg invalid_format.bmp. Your program should exit using sys.exit and provide an error message:
+Run your program with python shirt.py before1.jpg invalid_format.bmp. Your program should exit using sys.exit and provide an error message:
 
     Invalid output
 
-Run your program with python Shirt.py before1.jpg after1.png. Your program should exit using sys.exit and provide an error message:
+Run your program with python shirt.py before1.jpg after1.png. Your program should exit using sys.exit and provide an error message:
 
     Input and output have different extensions
 
-Run your program with python Shirt.py non_existent_image.jpg after1.jpg. Your program should exit using sys.exit and provide an error message:
+Run your program with python shirt.py non_existent_image.jpg after1.jpg. Your program should exit using sys.exit and provide an error message:
 
     Input does not exist
 
-Run your program with python Shirt.py before1.jpg after1.jpg
+Run your program with python shirt.py before1.jpg after1.jpg
