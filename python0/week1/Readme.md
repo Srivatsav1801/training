@@ -1,6 +1,6 @@
 
 # Week 1:
-it is a set of programs to showcase Conditions in Python
+It is a set of programs to showcase Conditions in Python
 
 # Deep Thought
 
