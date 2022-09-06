@@ -240,24 +240,24 @@ Assume that the input will be a photo of someone posing in just the right way, l
 ## How to Test :
 Here’s how to test the code manually:
 
-Run your program with python shirt.py. Your program should exit using sys.exit and provide an error message:
+Run the program with python shirt.py. the program should exit using sys.exit and provide an error message:
 
     Too few command-line arguments   
 
-Be sure to download images.and run your program with python shirt.py before1.jpg before2.jpg before3.jpg. Your program should output:
+Be sure to download images.and run the program with python shirt.py before1.jpg before2.jpg before3.jpg. the program should output:
 
     Too many command-line arguments
 
-Run your program with python shirt.py before1.jpg invalid_format.bmp. Your program should exit using sys.exit and provide an error message:
+Run the program with python shirt.py before1.jpg invalid_format.bmp. the program should exit using sys.exit and provide an error message:
 
     Invalid output
 
-Run your program with python shirt.py before1.jpg after1.png. Your program should exit using sys.exit and provide an error message:
+Run the program with python shirt.py before1.jpg after1.png. the program should exit using sys.exit and provide an error message:
 
     Input and output have different extensions
 
-Run your program with python shirt.py non_existent_image.jpg after1.jpg. Your program should exit using sys.exit and provide an error message:
+Run the program with python shirt.py non_existent_image.jpg after1.jpg. the program should exit using sys.exit and provide an error message:
 
     Input does not exist
 
-Run your program with python shirt.py before1.jpg after1.jpg
+Run the program with python shirt.py before1.jpg after1.jpg
