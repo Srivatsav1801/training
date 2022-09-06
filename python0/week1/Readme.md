@@ -45,19 +45,19 @@ In a file called bank.py, implement a program that prompts the user for a greeti
 ## How to Test :
 Here’s how to test  code manually:
 
-Run the program with python bank.py. Type Hello and press Enter, he program should output:
+Run the program with python bank.py. Type Hello and press Enter, the program should output:
 
     $0 
 
-Run the program with python bank.py. Type Hello, Newman and press Enter, he program should output:
+Run the program with python bank.py. Type Hello, Newman and press Enter, the program should output:
 
     $0
 
-Run the program with python bank.py. Type How you doing? and press Enter, he program should output
+Run the program with python bank.py. Type How you doing? and press Enter, the program should output
 
     $20
 
-Run the program with python bank.py. Type What's happening? and press Enter, he program should output
+Run the program with python bank.py. Type What's happening? and press Enter, the program should output
 
     $100
 
@@ -79,11 +79,11 @@ If the file’s name ends with some other suffix or has no suffix at all, output
 ## How to Test :
 Here’s how to test code manually:
 
-Run program with python extensions.py. Type happy.jpg and press Enter, program should output:
+Run the program with python extensions.py. Type happy.jpg and press Enter, the program should output:
 
     image/jpeg   
 
-Run program with python extensions.py. Type document.pdf and press Enter, program should output:
+Run the program with python extensions.py. Type document.pdf and press Enter, the program should output:
 
     application/pdf
 
