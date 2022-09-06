@@ -40,7 +40,7 @@ Run the program with python deep.py. Type 50 and press Enter, the program should
 
     No
 
-# Home Federal Savings Bank:
+# Home Federal Savings Bank
 In a file called bank.py, implement a program that prompts the user for a greeting. If the greeting starts with “hello”, output $0. If the greeting starts with an “h” (but not “hello”), output $20. Otherwise, output $100. Ignore any leading whitespace in the user’s greeting, and treat the user’s greeting case-insensitively.
 ## How to Test :
 Here’s how to test  code manually:
@@ -62,7 +62,7 @@ Run the program with python bank.py. Type What's happening? and press Enter, the
     $100
 
 
-# File Extensions :
+# File Extensions
 Even though Windows and macOS sometimes hide them, most files have file extensions, a suffix that starts with a period (.) at the end of their name. For instance, file names for GIFs end with .gif, and file names for JPEGs end with .jpg or .jpeg
  
 extensions.py, is a program that prompts the user for the name of a file and then outputs that file’s media type if the file’s name ends, case-insensitively, in any of these suffixes:
@@ -120,7 +120,7 @@ Run the program with python interpreter.py. Type 50 / 5 and press Enter, the pro
 
 
 
-# Meal Time :
+# Meal Time 
 Suppose that you’re in a country where it’s customary to eat breakfast between 7:00 and 8:00, lunch between 12:00 and 13:00, and dinner between 18:00 and 19:00. Wouldn’t it be nice if you had a program that could tell you what to eat when?
 
 In meal.py, is a program that prompts the user for a time and outputs whether it’s breakfast time, lunch time, or dinner time. If it’s not time for a meal, don’t output anything at all. Assume that the user’s input will be formatted in 24-hour time as #:## or ##:##. And assume that each meal’s time range is inclusive. For instance, whether it’s 7:00, 7:01, 7:59, or 8:00, or anytime in between, it’s time for breakfast.
