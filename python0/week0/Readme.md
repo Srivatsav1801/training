@@ -24,7 +24,7 @@ Some people have a habit of lecturing speaking rather quickly, and it’d be nic
 In a file called Playback.py, is a program in Python that prompts the user for input and then outputs that same input, replacing each space with ... (i.e., three periods).
 
 ## How to Test :
-Here’s how to test code:
+Here’s how to test code :
 
 Run program with python Playback.py. Type This is CS50 and press Enter. program should output:
 
