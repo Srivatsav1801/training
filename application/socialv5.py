@@ -8,15 +8,22 @@ import pandas as pd
 
 
 class Users:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self):
+        self.name = ""
         self.dob = ""
         self.gender = ""
         self.email = ""
         self.password = ""
         self.age = 0
 
+
+    @staticmethod
+    def getname():
+        name_of_user = str(input("Name: "))
+        return name_of_user
+
     def m_signup(self):
+        self.name = Users.getname()
         self.gender = input("Gender: ")
         self.dob = input("Date of Birth: ")
         self.email = self.e_valid()
@@ -75,7 +82,7 @@ class Users:
         while True:
             try:
                 if not re.search(
-                    "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$",
+                    "^(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[0-9])(?=.+?[#?!@$%^&*-]).{8,}$",
                     self.password,
                 ):
                     print("Invalid password")
@@ -106,9 +113,9 @@ class Users:
             sys.exit()
 
 
-class Home(Users):
-    def __init__(self, name):
-        super().__init__(name)
+class Home:
+    def __init__(self):
+        self.name= Users.getname()
         self.no_friends = ""
         self.post = ""
         self.like = 0
@@ -256,17 +263,17 @@ class Home(Users):
 
 
 def main():
-    name = str(input("Name:"))
-    app = Home(name)
+    sig = Users()
+    app = Home()
     while True:
         try:
             choice = int(input("Choose your option\n1,Signup\n2.Signin\n"))
             if choice == 1:
                 print("you chose to Signup:")
-                app.m_signup()
+                sig.m_signup()
             elif choice == 2:
                 print("You chose to sign in:")
-                app.m_signin()
+                sig.m_signin()
             app.homepage()
             while True:
                 try:
