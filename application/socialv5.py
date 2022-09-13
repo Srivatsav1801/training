@@ -29,7 +29,6 @@ class Users:
         self.email = self.e_valid()
         self.password = self.p_valid()
         self.age = input("Age :")
-        # change file names
         try:
             with open("credentials.csv", "a") as file:
                 writer = csv.DictWriter(
@@ -75,14 +74,13 @@ class Users:
             except ValueError:
                 continue
 
-    # password verification fix
 
     def p_valid(self):
         self.password = input("Password: ")
         while True:
             try:
                 if not re.search(
-                    "^(?=.+?[A-Z])(?=.+?[a-z])(?=.+?[0-9])(?=.+?[#?!@$%^&*-]).{8,}$",
+                    "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{6,}$",
                     self.password,
                 ):
                     print("Invalid password")
@@ -263,17 +261,17 @@ class Home:
 
 
 def main():
-    sig = Users()
+    log = Users()
     app = Home()
     while True:
         try:
             choice = int(input("Choose your option\n1,Signup\n2.Signin\n"))
             if choice == 1:
                 print("you chose to Signup:")
-                sig.m_signup()
+                log.m_signup()
             elif choice == 2:
                 print("You chose to sign in:")
-                sig.m_signin()
+                log.m_signin()
             app.homepage()
             while True:
                 try:
